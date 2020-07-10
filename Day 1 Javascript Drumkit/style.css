@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html {
+  height: 100%;
+  background-image: url(images/backgroundImage.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#keys {
+  display: flex;
+  color: #fff;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 25%;
+  flex-wrap: wrap;
+}
+.key {
+  padding: 20px;
+  width: 10%;
+  border: 2px solid black;
+  margin: 10px 5px;
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgba(0,0,0,0.6);
+  transition: all 0.07s;
+}
+.click {
+  transform: scale(1.1);
+  border: 2px solid yellow;
+}
+#keys span {
+  font-size: 1rem;
+  color: darkorange;
+}
+@media only screen and (max-width:1000px){
+  .key {
+    width: 20%;
+  }
+}
